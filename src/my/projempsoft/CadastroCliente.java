@@ -32,12 +32,15 @@ public class CadastroCliente extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        logo1 = new javax.swing.JLabel();
+        botaoCadastraCliente1 = new javax.swing.JButton();
+        botaoRegistra1 = new javax.swing.JButton();
+        botaoCadastraProduto1 = new javax.swing.JButton();
+        botaoRelatorio1 = new javax.swing.JButton();
+        botaoRecomenda1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         botaoPesquisar = new javax.swing.JButton();
         botaoCadastrar = new javax.swing.JButton();
@@ -48,52 +51,81 @@ public class CadastroCliente extends javax.swing.JFrame {
         jButton1.setToolTipText("");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b1se.png"))); // NOI18N
-        jButton3.setToolTipText("");
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        getContentPane().add(jButton3);
-        jButton3.setBounds(140, 230, 370, 50);
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b2se.png"))); // NOI18N
-        jButton2.setToolTipText("");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        getContentPane().add(jButton2);
-        jButton2.setBounds(160, 280, 330, 70);
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b3se.png"))); // NOI18N
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        getContentPane().add(jButton4);
-        jButton4.setBounds(160, 330, 330, 90);
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b4se.png"))); // NOI18N
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        getContentPane().add(jButton5);
-        jButton5.setBounds(160, 410, 330, 50);
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b5se.png"))); // NOI18N
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        botaoCadastraCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b1se.png"))); // NOI18N
+        botaoCadastraCliente1.setToolTipText("Cadastro de Clientes");
+        botaoCadastraCliente1.setBorderPainted(false);
+        botaoCadastraCliente1.setContentAreaFilled(false);
+        botaoCadastraCliente1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                botaoCadastraCliente1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(150, 460, 350, 80);
+        getContentPane().add(botaoCadastraCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 370, 50));
 
-        logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/LogomarcaP.png"))); // NOI18N
-        getContentPane().add(logo1);
-        logo1.setBounds(670, 180, 154, 150);
+        botaoRegistra1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b2se.png"))); // NOI18N
+        botaoRegistra1.setToolTipText("Registro de Vendas");
+        botaoRegistra1.setBorderPainted(false);
+        botaoRegistra1.setContentAreaFilled(false);
+        getContentPane().add(botaoRegistra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 330, 70));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/tela clara.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(650, 160, 390, 420);
+        botaoCadastraProduto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b3se.png"))); // NOI18N
+        botaoCadastraProduto1.setToolTipText("Cadastro de Produtos");
+        botaoCadastraProduto1.setBorderPainted(false);
+        botaoCadastraProduto1.setContentAreaFilled(false);
+        getContentPane().add(botaoCadastraProduto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 330, 90));
+
+        botaoRelatorio1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b4se.png"))); // NOI18N
+        botaoRelatorio1.setToolTipText("Relatório de Vendas");
+        botaoRelatorio1.setBorderPainted(false);
+        botaoRelatorio1.setContentAreaFilled(false);
+        getContentPane().add(botaoRelatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 330, 50));
+
+        botaoRecomenda1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b5se.png"))); // NOI18N
+        botaoRecomenda1.setToolTipText("Recomendações de Produtos");
+        botaoRecomenda1.setBorderPainted(false);
+        botaoRecomenda1.setContentAreaFilled(false);
+        botaoRecomenda1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoRecomenda1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botaoRecomenda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 350, 80));
+
+        jTextField2.setBorder(null);
+        jTextField2.setOpaque(false);
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 510, 330, 30));
+
+        jTextField3.setBorder(null);
+        jTextField3.setOpaque(false);
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(769, 190, 250, 30));
+
+        jTextField4.setBorder(null);
+        jTextField4.setOpaque(false);
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 330, 30));
+
+        jTextField5.setBorder(null);
+        jTextField5.setOpaque(false);
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 400, 330, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/cadastraCliente.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 470, 490));
 
         botaoPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/pesquisar. cad produtos - Cópia.png"))); // NOI18N
         botaoPesquisar.setContentAreaFilled(false);
@@ -103,13 +135,12 @@ public class CadastroCliente extends javax.swing.JFrame {
                 botaoPesquisarActionPerformed(evt);
             }
         });
-        getContentPane().add(botaoPesquisar);
-        botaoPesquisar.setBounds(760, 610, 140, 50);
+        getContentPane().add(botaoPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 610, 140, 50));
 
         botaoCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b7se - Cópia_1.png"))); // NOI18N
+        botaoCadastrar.setToolTipText("");
         botaoCadastrar.setContentAreaFilled(false);
-        getContentPane().add(botaoCadastrar);
-        botaoCadastrar.setBounds(900, 610, 140, 50);
+        getContentPane().add(botaoCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, 140, 50));
 
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
@@ -117,24 +148,38 @@ public class CadastroCliente extends javax.swing.JFrame {
         jTextField1.setText("Cadastro de Clientes");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(200, 20, 500, 70);
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 500, 70));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/background.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, -30, 1160, 820);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void botaoRecomenda1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoRecomenda1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_botaoRecomenda1ActionPerformed
 
     private void botaoPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPesquisarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botaoPesquisarActionPerformed
+
+    private void botaoCadastraCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCadastraCliente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoCadastraCliente1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,18 +217,21 @@ public class CadastroCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botaoCadastraCliente1;
+    private javax.swing.JButton botaoCadastraProduto1;
     private javax.swing.JButton botaoCadastrar;
     private javax.swing.JButton botaoPesquisar;
+    private javax.swing.JButton botaoRecomenda1;
+    private javax.swing.JButton botaoRegistra1;
+    private javax.swing.JButton botaoRelatorio1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel logo1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 
     

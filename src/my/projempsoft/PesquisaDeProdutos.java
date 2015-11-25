@@ -9,12 +9,12 @@ package my.projempsoft;
  *
  * @author Brunna
  */
-public class RegistroDeVendas extends javax.swing.JFrame {
+public class PesquisaDeProdutos extends javax.swing.JFrame {
 
     /**
-     * Creates new form RegistroDeVendas
+     * Creates new form PesquisaDeProdutos
      */
-    public RegistroDeVendas() {
+    public PesquisaDeProdutos() {
         initComponents();
     }
 
@@ -32,11 +32,14 @@ public class RegistroDeVendas extends javax.swing.JFrame {
         botaoCadastraProduto1 = new javax.swing.JButton();
         botaoRelatorio1 = new javax.swing.JButton();
         botaoRecomenda1 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,25 +53,25 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 botaoCadastraCliente1ActionPerformed(evt);
             }
         });
-        getContentPane().add(botaoCadastraCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 370, 50));
+        getContentPane().add(botaoCadastraCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 370, 50));
 
         botaoRegistra1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b2se.png"))); // NOI18N
         botaoRegistra1.setToolTipText("Registro de Vendas");
         botaoRegistra1.setBorderPainted(false);
         botaoRegistra1.setContentAreaFilled(false);
-        getContentPane().add(botaoRegistra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 330, 70));
+        getContentPane().add(botaoRegistra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 330, 70));
 
         botaoCadastraProduto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b3se.png"))); // NOI18N
         botaoCadastraProduto1.setToolTipText("Cadastro de Produtos");
         botaoCadastraProduto1.setBorderPainted(false);
         botaoCadastraProduto1.setContentAreaFilled(false);
-        getContentPane().add(botaoCadastraProduto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 330, 90));
+        getContentPane().add(botaoCadastraProduto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 330, 90));
 
         botaoRelatorio1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b4se.png"))); // NOI18N
         botaoRelatorio1.setToolTipText("Relatório de Vendas");
         botaoRelatorio1.setBorderPainted(false);
         botaoRelatorio1.setContentAreaFilled(false);
-        getContentPane().add(botaoRelatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 330, 50));
+        getContentPane().add(botaoRelatorio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 330, 50));
 
         botaoRecomenda1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/b5se.png"))); // NOI18N
         botaoRecomenda1.setToolTipText("Recomendações de Produtos");
@@ -79,12 +82,45 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 botaoRecomenda1ActionPerformed(evt);
             }
         });
-        getContentPane().add(botaoRecomenda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 350, 80));
+        getContentPane().add(botaoRecomenda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 350, 80));
+
+        jTextField4.setEditable(false);
+        jTextField4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField4.setText("Pesquisa");
+        jTextField4.setBorder(null);
+        jTextField4.setOpaque(false);
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 180, 30));
+
+        jTextField3.setEditable(false);
+        jTextField3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jTextField3.setBorder(null);
+        jTextField3.setOpaque(false);
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 450, 30));
+
+        jScrollPane1.setBorder(null);
+
+        jTextArea1.setBackground(new java.awt.Color(233, 233, 233));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 480, 220));
 
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Registro de Vendas");
+        jTextField1.setText("Pesquisa de Produtos");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -92,27 +128,17 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 460, 70));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 510, 70));
 
         jTextField2.setBorder(null);
         jTextField2.setOpaque(false);
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 190, 210, 40));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/salvar.png"))); // NOI18N
-        jButton2.setBorder(null);
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 680, -1, 70));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/pesquisaprod.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 570, 620));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/regVendas.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, -1, 573));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/background.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/background.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,9 +155,13 @@ public class RegistroDeVendas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,20 +180,20 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesquisaDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesquisaDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesquisaDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesquisaDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RegistroDeVendas().setVisible(true);
+                new PesquisaDeProdutos().setVisible(true);
             }
         });
     }
@@ -174,10 +204,13 @@ public class RegistroDeVendas extends javax.swing.JFrame {
     private javax.swing.JButton botaoRecomenda1;
     private javax.swing.JButton botaoRegistra1;
     private javax.swing.JButton botaoRelatorio1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

@@ -9,12 +9,12 @@ package my.projempsoft;
  *
  * @author Brunna
  */
-public class RegistroDeVendas extends javax.swing.JFrame {
+public class RecomendacaoDeProdutos extends javax.swing.JFrame {
 
     /**
-     * Creates new form RegistroDeVendas
+     * Creates new form RecomendacaoDeProdutos
      */
-    public RegistroDeVendas() {
+    public RecomendacaoDeProdutos() {
         initComponents();
     }
 
@@ -32,11 +32,12 @@ public class RegistroDeVendas extends javax.swing.JFrame {
         botaoCadastraProduto1 = new javax.swing.JButton();
         botaoRelatorio1 = new javax.swing.JButton();
         botaoRecomenda1 = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -81,10 +82,23 @@ public class RegistroDeVendas extends javax.swing.JFrame {
         });
         getContentPane().add(botaoRecomenda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 350, 80));
 
+        jTextField3.setEditable(false);
+        jTextField3.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setText("Configurar");
+        jTextField3.setBorder(null);
+        jTextField3.setOpaque(false);
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 220, 240, 70));
+
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Registro de Vendas");
+        jTextField1.setText("Recomendação de Produtos");
         jTextField1.setBorder(null);
         jTextField1.setOpaque(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -92,13 +106,23 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 460, 70));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 670, 70));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/gerarAutoma.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 390, 260, 70));
 
         jTextField2.setBorder(null);
         jTextField2.setOpaque(false);
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(749, 190, 210, 40));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/salvar.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/gerarManual.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -106,13 +130,10 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(905, 680, -1, 70));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, 260, 70));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/regVendas.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, -1, 573));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/background.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/projempsoft/images/background.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,9 +150,17 @@ public class RegistroDeVendas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,20 +179,20 @@ public class RegistroDeVendas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RecomendacaoDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RecomendacaoDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RecomendacaoDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RegistroDeVendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RecomendacaoDeProdutos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RegistroDeVendas().setVisible(true);
+                new RecomendacaoDeProdutos().setVisible(true);
             }
         });
     }
@@ -174,10 +203,11 @@ public class RegistroDeVendas extends javax.swing.JFrame {
     private javax.swing.JButton botaoRecomenda1;
     private javax.swing.JButton botaoRegistra1;
     private javax.swing.JButton botaoRelatorio1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
